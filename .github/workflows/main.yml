@@ -15,7 +15,10 @@ jobs:
 
       - name: Change to project directory
         run: cd maven-java-monitoring-example
-
+        
+      - name: list dir
+        run: ls
+        
       - name: Build Java app with Maven
         run: mvn clean install
 
