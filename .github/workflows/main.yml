@@ -13,8 +13,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: List files in the context
-        run: ls -l
+      - name: Change to project directory
+        run: cd maven-java-monitoring-example
 
       - name: Build Java app with Maven
         run: mvn clean install
